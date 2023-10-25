@@ -1,0 +1,58 @@
+/*
+JOHN HAROLD SILVANO
+
+ACTIVITY ONE
+*/
+
+
+  import java.util.*;
+   
+public class AnimalSound {
+    public static void main(String args[]) {
+            Scanner scan = new Scanner(System.in);
+            
+    int choice;       
+    
+    
+        do {
+                    System.out.println();
+                    System.out.println("*****Activity one: What does the animal say?*****");
+                    System.out.println("select an animal:");
+                    System.out.println("1. LION");
+                    System.out.println("2. PIG");
+                    System.out.println("3. SNAKE");
+                    System.out.println("4. HORSE");
+                    System.out.println("5. Exit\n");
+                    
+                    System.out.print("Enter number of choice: ");
+                    choice = scan.nextInt();
+                    scan.nextLine();
+
+        switch (choice) {
+                         case 1:
+                         System.out.println("LION sound ! Rooooaarr: ");
+                         break;
+                         case 2:
+                         System.out.println("PIG sound ! Oinkk Oinkk: ");
+                         break;
+                         case 3:
+                         System.out.println("SNAKE sounds !Hissssss Hissss: ");
+                         break;
+                         case 4:
+                         System.out.println("HORSE sounds ! Neigghhhh Neigghhh: ");
+                         break;
+                         case 5:
+                             System.out.print("\nExiting Program.....");
+    
+                         break;
+                         default:
+                             System.out.print("\nInvalid choice!");
+                         break;
+                     
+}
+
+}
+while (choice != 5);
+
+ }
+}
